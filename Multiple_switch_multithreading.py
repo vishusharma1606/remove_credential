@@ -51,7 +51,7 @@ def device_info(device):
        file.write(f"\n{output}\n")
    
        #execute show ip interface on router and save output to output object 
-       output = net_connect.send_command('show ip interface',read_timeout = 120)
+       output = net_connect.send_command('show ip interface' ,read_timeout = 120)
        print(output)
        file.write(f"\n{output}\n")
     
